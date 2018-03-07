@@ -7,7 +7,7 @@
     android:orientation="vertical"
     style="@style/Theme.AppCompat"
     android:background="@color/brown"
-    tools:context="com.example.jesus.readregister.App.Cadastro">
+    tools:context="com.example.jesus.readregister.App.layouts.Cadastro">
 
 
 

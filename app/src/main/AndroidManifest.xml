@@ -17,18 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".App.ListarLivros" />
+        <activity android:name=".App.ListarLivrosActivity" />
         <activity android:name=".App.layouts.Home" />
         <activity
             android:name=".App.CasdastroLivrosActivity"
-            android:parentActivityName=".App.ListarLivros" />
-        <activity android:name=".App.layouts.Rv_item_livro" />
-        <activity android:name=".App.Cadastro" />
+            android:parentActivityName=".App.ListarLivrosActivity" />
+        <activity android:name=".App.layouts.RvItemLivro" />
+        <activity android:name=".App.layouts.Cadastro" />
         <activity
             android:name=".App.LivroDetail"
-            android:parentActivityName=".App.ListarLivros" />
-        <activity android:name=".App.layouts.Item_Cadastro" />
-        <activity android:name=".App.ExibirComentario" />
+            android:parentActivityName=".App.ListarLivrosActivity" />
+        <activity android:name=".App.layouts.ItemCadastro" />
+        <activity android:name=".App.ExibirComentarioActivity" />
         <activity android:name=".App.AdicionarComentario" />
         <activity android:name=".App.layouts.Search"></activity>
     </application>

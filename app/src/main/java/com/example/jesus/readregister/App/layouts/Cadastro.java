@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.jesus.readregister.R;
 
-public class Item_Cadastro extends AppCompatActivity {
+public class Cadastro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item__cadastro);
+        setContentView(R.layout.activity_cadastro);
     }
 }

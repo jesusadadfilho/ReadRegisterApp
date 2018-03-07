@@ -10,7 +10,7 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.example.jesus.readregister.App.AdicionarComentario;
-import com.example.jesus.readregister.App.ExibirComentario;
+import com.example.jesus.readregister.App.ExibirComentarioActivity;
 import com.example.jesus.readregister.Comentario;
 import com.example.jesus.readregister.R;
 
@@ -72,7 +72,7 @@ public class ComentarioAdapter extends RecyclerView.Adapter<ComentarioAdapter.Co
         });
 
         holder.itemView.setOnClickListener( (view -> {
-            final Intent intent = new Intent(context,ExibirComentario.class);
+            final Intent intent = new Intent(context,ExibirComentarioActivity.class);
             intent.putExtra("comentarioId", comentario.getId());
             context.startActivity(intent);
         }));

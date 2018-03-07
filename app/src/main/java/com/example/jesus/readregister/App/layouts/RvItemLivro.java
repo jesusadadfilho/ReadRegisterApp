@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.jesus.readregister.R;
 
-public class Rv_item_livro extends AppCompatActivity {
+public class RvItemLivro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

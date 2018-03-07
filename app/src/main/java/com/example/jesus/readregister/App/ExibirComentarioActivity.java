@@ -12,7 +12,7 @@ import com.example.jesus.readregister.R;
 import io.objectbox.Box;
 import model.App;
 
-public class ExibirComentario extends AppCompatActivity {
+public class ExibirComentarioActivity extends AppCompatActivity {
 
     private Box<Comentario> comentarioBox;
     private long comentarioId;

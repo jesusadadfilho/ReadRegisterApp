@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("reader.file", MODE_PRIVATE);
         if(verifyLogado() && preferences.getLong("userId", -1) != -1){
             Toast.makeText(this, "permanecer",Toast.LENGTH_LONG).show();
-            startActivity(new Intent(this,ListarLivros.class));
+            startActivity(new Intent(this,ListarLivrosActivity.class));
             finish();
         }else{
             Toast.makeText(this, "não permanecer",Toast.LENGTH_LONG).show();
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
             Query query = contasBox.query().equal(Conta_.password,senha).equal(Conta_.username,usuario).build();
             List<Conta> result = query.find();
             if (result.size() > 0) {
-                Intent intent = new Intent(this, ListarLivros.class);
+                Intent intent = new Intent(this, ListarLivrosActivity.class);
                 SharedPreferences preferences = getSharedPreferences("reader.file", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putLong("userId", result.get(0).getId());

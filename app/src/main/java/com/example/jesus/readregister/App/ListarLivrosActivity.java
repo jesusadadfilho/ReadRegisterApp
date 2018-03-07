@@ -34,7 +34,7 @@ import java.util.List;
 import io.objectbox.Box;
 import model.App;
 
-public class ListarLivros extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class ListarLivrosActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private Box<Livro> livrosBox;
     private Livro livro;
