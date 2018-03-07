@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ReadRegister</string>
+    <string name="escreva_o_seu_usuario">Digite o seu usuario:</string>
+    <string name="digite_a_sua_senha">Digite a sua senha: </string>
+    <string name="manter_conectado">Manter conectado</string>
+    <string name="n_o_possui_cadastro">Não possui cadastro?</string>
+    <string name="c_dastro">Login</string>
+    <string name="login">Login</string>
+    <string name="titulo">Titulo</string>
+    <string name="ano">Ano</string>
+    <string name="g_nero">Gênero: </string>
+    <string name="autor">Autor</string>
+    <string name="n_paginas">N° paginas </string>
+    <string name="data_de_inicio">Data de inicio</string>
+    <string name="tag">Tag(*opcional)</string>
+    <string name="data_ini">Data de inicio</string>
+    <string name="data_ter">Data de termino</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="email">Usuario:</string>
+    <string name="senha">Senha:</string>
+    <string name="digite_a_sua_senha_novamente">Digite a sua senha novamente:</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="lido">lido</string>
+    <string name="lendo">lendo</string>
+    <string name="desejo_ler">desejo ler</string>
+    <string name="pag_atual">Pag atual</string>
+</resources>

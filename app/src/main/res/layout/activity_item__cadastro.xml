@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp"
+    android:clickable="true"
+    android:layout_marginTop="4dp"
+    app:cardElevation="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="8dp"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="96dp"
+            android:layout_height="138dp"
+            android:src="@mipmap/ic_coment"/>
+
+        <TextView
+            android:id="@+id/capitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/book_image"
+            android:text="Capitulo: "/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

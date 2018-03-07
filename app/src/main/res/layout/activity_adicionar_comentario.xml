@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jesus.readregister.App.AdicionarComentario">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/cap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capitulo: "
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/cap_var"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/com_var"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="150"
+                android:hint="comentario"
+                />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:onClick="savar"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v7.widget.CardView>
+
+

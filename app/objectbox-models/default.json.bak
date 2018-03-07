@@ -1,0 +1,151 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "3:7770589354014614484",
+      "lastPropertyId": "12:375600956160523170",
+      "name": "Livro",
+      "properties": [
+        {
+          "id": "1:8620614404207946375",
+          "name": "id"
+        },
+        {
+          "id": "2:5683166785458907349",
+          "name": "titulo"
+        },
+        {
+          "id": "3:8594862950883025819",
+          "name": "ano"
+        },
+        {
+          "id": "4:8998382210671749989",
+          "name": "genero"
+        },
+        {
+          "id": "5:4496414874991972665",
+          "name": "autor"
+        },
+        {
+          "id": "6:2279473073249782771",
+          "name": "tag"
+        },
+        {
+          "id": "7:246536843137476212",
+          "name": "paginas"
+        },
+        {
+          "id": "8:4856920672432440605",
+          "name": "data"
+        },
+        {
+          "id": "9:8396915931850478848",
+          "indexId": "2:5929295800689864394",
+          "name": "donoId"
+        },
+        {
+          "id": "10:907759413985774401",
+          "name": "situacion"
+        },
+        {
+          "id": "11:8370142835936582106",
+          "name": "ratin"
+        },
+        {
+          "id": "12:375600956160523170",
+          "name": "paginaAtual"
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:7530738646649195790",
+          "name": "comentarios"
+        }
+      ]
+    },
+    {
+      "id": "4:7822362389581454486",
+      "lastPropertyId": "3:1896317930303976342",
+      "name": "Conta",
+      "properties": [
+        {
+          "id": "1:3416661300653080720",
+          "name": "id"
+        },
+        {
+          "id": "2:5315420219329733107",
+          "name": "username"
+        },
+        {
+          "id": "3:1896317930303976342",
+          "name": "password"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:1429069837760699767",
+          "name": "livroToMany"
+        }
+      ]
+    },
+    {
+      "id": "5:5499660038882246131",
+      "lastPropertyId": "4:2276951666622195476",
+      "name": "Comentario",
+      "properties": [
+        {
+          "id": "1:5686913531492644999",
+          "name": "id"
+        },
+        {
+          "id": "2:6656938077872539659",
+          "name": "texto"
+        },
+        {
+          "id": "3:3283917386145335353",
+          "name": "capitulo"
+        },
+        {
+          "id": "4:2276951666622195476",
+          "indexId": "3:6397493229174464847",
+          "name": "livroToOneId"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:5499660038882246131",
+  "lastIndexId": "3:6397493229174464847",
+  "lastRelationId": "4:7530738646649195790",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [
+    5106969057966129874,
+    6781613887455141114
+  ],
+  "retiredIndexUids": [
+    4875214369464212018
+  ],
+  "retiredPropertyUids": [
+    4678026176012311902,
+    5222261861074072343,
+    376399954560827056,
+    5144301219720069415,
+    4466789397438914498,
+    3095496246975080236,
+    2686460681027204697,
+    5532707535531406443,
+    5154786172890960198,
+    7528242677446358869,
+    111559630237427014,
+    3592886273706925649
+  ],
+  "retiredRelationUids": [
+    5187800454416346704,
+    1174753454021549303
+  ],
+  "version": 1
+}

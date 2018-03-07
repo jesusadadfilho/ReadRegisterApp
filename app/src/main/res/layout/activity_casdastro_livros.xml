@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.jesus.readregister.App.CasdastroLivrosActivity">
+
+
+        <EditText
+            android:id="@+id/editTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:hint="@string/titulo"
+            android:inputType="textCapWords"
+            android:maxLength="30"/>
+        <EditText
+            android:id="@+id/editAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:hint="@string/ano"
+            android:inputType="number"
+            android:maxLength="4"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:text="@string/g_nero"
+                android:maxLength="20"/>
+
+            <EditText
+                android:id="@+id/editGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/genero"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:text="aventura" />
+
+            <ImageView
+                android:id="@+id/switch_genero"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/genero"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/editGenero"
+                android:onClick="changeGenero"
+                android:src="@mipmap/ic_chose" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/editAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:hint="@string/autor"
+            android:inputType="textCapWords"
+            android:maxLength="30"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPaginasAtual"
+                android:inputType="number"
+                android:maxLength="4"
+                android:hint="@string/pag_atual"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/editPaginas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:inputType="number"
+                android:hint="@string/n_paginas"
+                android:maxLength="4"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editDataIni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:hint="@string/data_ini"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:layout_weight="3"/>
+            <ImageView
+                android:id="@+id/editImageDataIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:src="@drawable/calendar_icon"
+                android:inputType="date"
+                android:maxLength="30"
+                android:onClick="showDatePickerDialog" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editDataTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:hint="@string/data_ter"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:layout_weight="3"/>
+            <ImageView
+                android:id="@+id/editImageDataTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:src="@drawable/calendar_icon"
+                android:inputType="date"
+                android:maxLength="30"
+                android:onClick="showDatePickerDialog" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:hint="@string/tag"
+            android:inputType="textCapWords"
+            android:maxLength="20"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/lido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lido"
+                android:checked="true"/>
+            <RadioButton android:id="@+id/lendo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lendo"
+                android:layout_marginStart="30dp"/>
+            <RadioButton android:id="@+id/desejo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desejo_ler"
+                android:layout_marginStart="30dp"/>
+
+
+
+        </RadioGroup>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_add_black_24dp"
+                android:onClick="salvar"/>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp"
+    android:clickable="true"
+    android:layout_marginTop="4dp"
+    app:cardElevation="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="8dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="96dp"
+            android:layout_height="138dp"
+            android:src="@drawable/ic_exe"/>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/book_image"
+            android:text="Titulo"/>
+
+        <TextView
+            android:id="@+id/progresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/page_progresso"
+            android:layout_alignBottom="@+id/page_progresso"
+            android:layout_toEndOf="@+id/page_progresso"
+            android:text="0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/page_progresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/titulo"
+            android:layout_toEndOf="@id/book_image"
+            android:text="pagina atual: "
+            />
+
+
+        <TextView
+            android:id="@+id/autor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progresso"
+            android:layout_toEndOf="@id/book_image"
+            android:text="Machado de assis"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

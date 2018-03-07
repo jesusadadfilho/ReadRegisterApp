@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/açaoM"
+        android:title="ação">
+
+    </item>
+    <item android:id="@+id/aventuraM"
+        android:title="aventura">
+
+    </item>
+    <item android:id="@+id/terrorM"
+        android:title="terror">
+
+    </item>
+    <item android:id="@+id/dramaM"
+        android:title="drama">
+
+    </item>
+    <item android:id="@+id/outroM"
+        android:title="Outro">
+
+    </item>
+
+</menu>
