@@ -1,4 +1,4 @@
-package model.Adapters;
+package model.adapters;
 
 import android.content.Context;
 import android.content.Intent;

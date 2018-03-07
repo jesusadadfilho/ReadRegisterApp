@@ -24,7 +24,7 @@ import android.widget.Toast;
 import com.example.jesus.readregister.Conta;
 import com.example.jesus.readregister.Livro;
 
-import model.Adapters.LivrosAdapter;
+import model.adapters.LivrosAdapter;
 
 import com.example.jesus.readregister.Livro_;
 import com.example.jesus.readregister.R;

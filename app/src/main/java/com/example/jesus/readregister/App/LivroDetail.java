@@ -20,7 +20,7 @@ import java.util.List;
 
 import io.objectbox.Box;
 import model.App;
-import model.Adapters.ComentarioAdapter;
+import model.adapters.ComentarioAdapter;
 
 public class LivroDetail extends AppCompatActivity {
 
